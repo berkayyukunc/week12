@@ -1,3 +1,4 @@
+<!-- This is a bug fix -->
 # EE 471 Modern Software Development Practices and Technologies - Week 12
 
 This repository contains the in-class exercise for Week 12.
