@@ -1,3 +1,13 @@
+# [13.0.0](https://github.com/berkayyukunc/week12/compare/v12.1.0...v13.0.0) (2026-06-04)
+
+
+* Merge pull request [#6](https://github.com/berkayyukunc/week12/issues/6) from berkayyukunc/break/readme-file-changed ([2eef901](https://github.com/berkayyukunc/week12/commit/2eef90119d8ebc72647548c65d1ebd4d2d4a0af4))
+
+
+### BREAKING CHANGES
+
+* Readme file changed major.
+
 # [12.1.0](https://github.com/berkayyukunc/week12/compare/v12.0.1...v12.1.0) (2026-06-04)
 
 
