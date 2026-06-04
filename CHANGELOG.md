@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/berkayyukunc/week12/compare/v1.0.0...v1.0.1) (2026-06-04)
+
+
+### Bug Fixes
+
+* ignore runner files and prevent lsof failure in CD pipeline ([c7723d0](https://github.com/berkayyukunc/week12/commit/c7723d0cdd18d604bf2427b57dd76fa0d422858d))
+
 # 1.0.0 (2026-06-04)
 
 
