@@ -2,6 +2,7 @@
 # EE 471 Modern Software Development Practices and Technologies - Week 12
 
 This repository contains the in-class exercise for Week 12.
+<!-- This is a major (breaking change) update -->
 
 ## Project Structure
 - `djangotutorial/`: The Django backend server.
