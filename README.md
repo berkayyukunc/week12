@@ -9,3 +9,4 @@ This repository contains the in-class exercise for Week 12.
 - `publish/bump_version.py`: Custom version bumping script.
 - `VERSION`: Stores the current release version of the application.
 - `CHANGELOG.md`: Generated changelog tracking all release notes.
+<!-- This is a feature update -->
