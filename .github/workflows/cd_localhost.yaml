@@ -1,0 +1,44 @@
+name: CD Localhost
+
+on:
+  workflow_run:
+    workflows: ["CI Semantic Versioning"]
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Localhost
+    runs-on: self-hosted
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          cd djangotutorial
+          python3 -m pip install -r requirements.txt
+
+      - name: Run Database Migrations
+        run: |
+          cd djangotutorial
+          python3 manage.py migrate
+
+      - name: Kill Previous Running Django Instance
+        run: |
+          PID=$(lsof -t -i:8000)
+          if [ -n "$PID" ]; then
+            echo "Killing running instance on port 8000 (PID: $PID)"
+            kill -9 $PID
+          else
+            echo "No process running on port 8000"
+          fi
+
+      - name: Launch New Version in Background
+        run: |
+          cd djangotutorial
+          python3 manage.py runserver 8000 > django.log 2>&1 &
+          echo "Django server launched in background on port 8000."
