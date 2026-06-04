@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/berkayyukunc/week12/compare/v1.0.1...v1.0.2) (2026-06-04)
+
+
+### Bug Fixes
+
+* set RUNNER_TRACKING_ID to keep Django running in background ([141562e](https://github.com/berkayyukunc/week12/commit/141562e0ed00dbfb018dbde5d41e7ecd5064be9f))
+
 ## [1.0.1](https://github.com/berkayyukunc/week12/compare/v1.0.0...v1.0.1) (2026-06-04)
 
 
