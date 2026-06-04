@@ -38,6 +38,8 @@ jobs:
           fi
 
       - name: Launch New Version in Background
+        env:
+          RUNNER_TRACKING_ID: ""
         run: |
           cd djangotutorial
           python3 manage.py runserver 8000 > django.log 2>&1 &
