@@ -1,0 +1,18 @@
+# Python compilation cache
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+djangotutorial/db.sqlite3
+djangotutorial/db.sqlite3-journal
+
+# OS files
+.DS_Store
+Week-12-InClass-Exercise.pdf
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
