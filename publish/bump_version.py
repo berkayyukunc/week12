@@ -1,17 +1,17 @@
 import sys
-import os
+
 
 def main():
     if len(sys.argv) < 2:
         print("Error: No version argument provided.")
         sys.exit(1)
-    
+
     new_version = sys.argv[1]
-    
+
     # We write VERSION to the root directory
     # Current working directory during semantic-release execution is the repo root.
     version_file_path = "VERSION"
-    
+
     try:
         with open(version_file_path, "w") as f:
             f.write(new_version.strip())
@@ -19,6 +19,7 @@ def main():
     except Exception as e:
         print(f"Error writing VERSION file: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
