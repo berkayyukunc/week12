@@ -1,3 +1,10 @@
+# [12.1.0](https://github.com/berkayyukunc/week12/compare/v12.0.1...v12.1.0) (2026-06-04)
+
+
+### Features
+
+* Readme file changed feature. ([3701a76](https://github.com/berkayyukunc/week12/commit/3701a76a5a7858d7995e03a4fa05a926138b799e))
+
 ## [12.0.1](https://github.com/berkayyukunc/week12/compare/v12.0.0...v12.0.1) (2026-06-04)
 
 
