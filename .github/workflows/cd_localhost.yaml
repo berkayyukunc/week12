@@ -29,7 +29,7 @@ jobs:
 
       - name: Kill Previous Running Django Instance
         run: |
-          PID=$(lsof -t -i:8000)
+          PID=$(lsof -t -i:8000 || true)
           if [ -n "$PID" ]; then
             echo "Killing running instance on port 8000 (PID: $PID)"
             kill -9 $PID
